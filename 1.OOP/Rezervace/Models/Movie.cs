@@ -25,20 +25,6 @@ namespace WpfApp2.Models
             }
         }
 
-        /*
-        public double Price //vlastnost, která se pojí s datovým členem
-        {
-            get
-            {
-                return price;
-            }
-
-            set
-            {
-                   price = value;
-            }
-        }
-        */
 
         public double Price { get; set; } //automatická vlastnost
 
