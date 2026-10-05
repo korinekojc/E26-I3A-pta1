@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="30">
+
+        <TextBlock Text="Film:" />
+        <TextBox x:Name="txtMovie"
+                 Margin="0,5,0,10"/>
+
+        <TextBlock Text="Cena vstupenky:" />
+        <TextBox x:Name="txtPrice"
+                 Margin="0,5,0,10"/>
+
+        <TextBlock Text="Zákazník:" />
+        <TextBox x:Name="txtCustomer"
+                 Margin="0,5,0,10"/>
+
+        <TextBlock Text="Věk zákazníka:" />
+        <TextBox x:Name="txtAge"
+                 Margin="0,5,0,20"/>
+
+        <Button Content="Vypočítat cenu"
+                Height="40"
+                Click="Calculate_Click"/>
+
+        <TextBlock x:Name="txtResult"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   Margin="0,25,0,0"/>
+
+    </StackPanel>
+</Window>
